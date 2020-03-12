@@ -1,0 +1,229 @@
+.page-header{
+    display: flex;
+    position: absolute;
+    flex-direction: row ;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+    padding: 0 20px 0 20px;
+    width: 100%;
+    border-bottom: 1px solid #fff;
+}
+
+.page-header__menu{
+    margin-left: 150px;
+}
+
+.page-header__navbar{
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-between;
+}
+
+.navbar__item{
+    font-size: 18px;
+    padding: 7px 20px;
+    color: #fff;
+
+}
+.navbar__item:hover{
+    color: rgb(98, 98, 98);
+}
+.navbar__item:link, .land-photo__button:link,
+.cart-list__clear:link{
+    text-decoration: none;
+    
+}
+
+
+
+
+
+/* ! CART SECTION */
+
+.cart-section{
+    display: flex;
+    flex-direction: row;
+}
+ul{
+    list-style: none;
+}
+
+.fa-shopping-cart{
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.cart-section__sub-menu{
+    position: relative;
+}
+.cart-section__cart{
+    display: none;
+}
+.cart-section__sub-menu:hover .cart-section__cart{
+    display: block;
+    position: absolute;
+    right:0;
+    top:100%;
+    z-index: 1;
+    background-color: white;
+    padding: 20px;
+    min-height: 400px;
+    min-width: 300px;
+}
+.cart-list__clear{
+    position: block;
+    color: red;
+    padding: 5px 20px;
+    font: 18px;
+    font-weight: 700;
+    border: 2px solid red;
+    transition: all 0.2s ease-out;
+}
+
+.cart-list__clear:hover{
+    color: #fff;
+    background-color: red;
+}
+
+.cart-body__row{
+    margin-bottom: 100px;
+}
+
+.fa-shopping-cart{
+    color: #fff;
+    margin-right: 5px;
+}
+.head__item{
+    padding-right: 55px ;
+    padding-left: 10px;
+}
+.head__item:nth-child(3){
+    padding-right: 20px;
+}
+/* ?INNER CART CARD */
+
+.cart-list__card{
+    width: 22%;
+}
+
+.card__img{
+    width: 90%;
+}
+
+.card-info{
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.cart-list__card:last-child{
+    font-size: 14px;
+    position:relative;
+    top:-9px;
+    font-weight: 500;
+}
+.card__delete{
+    background-color: #fff;
+    border: 1px solid rgb(255, 136, 0);
+    padding: 5px 13px;
+    font-weight: 500;
+    color: rgb(255, 136, 0);
+    transition: all 0.2s ease-out;
+}
+
+.card__delete:hover{
+    background-color: rgb(255, 136, 0);
+    color: #fff;
+}
+
+.cart-list__clear{
+    position: relative;
+    left: 37%;
+    top: 10px;
+}
+
+
+/* !SEARCHER SECTION */
+.searcher{
+    text-align: center;
+}
+.searcher__input{
+    background: none;
+    border: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 5px 10px;
+    width: 85%;
+    border-radius: 2px;
+    margin: 0 auto !important;
+}
+
+.searcher__input::placeholder{
+    color: rgb(216, 216, 216);
+}
+
+
+
+
+
+ /*  !Landing photo */
+.land-photo{
+    background: url("./images/landing_photo.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 95vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.land-photo__intro{
+    color: #fff;
+    font-size: 50px;
+    font-weight: 500;
+    text-transform: uppercase;
+    width: 50%;
+    text-align: center;
+    line-height: 1.1;
+}
+.land-photo__button{
+    padding: 12px 25px;
+    background-color: #85571b5d;
+    color: #fff;
+    font-weight: 500;
+    border: 1px solid #fff;
+    transition: all 0.3s ease;
+    font-size: 18px;
+}
+.land-photo__button:hover{
+    color: black;
+    background-color: #85571bdc;
+}
+.btn--30m{
+    margin-top:30px;
+}
+
+
+/* !!STORE SECTION*/
+.store-section{
+    margin-top: 40px;
+}
+.card__image{
+    width: 100%;
+    height: 200px;
+    background: url("./images/tennis1/Nike\ Running.webp") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+/* !!SPACINGS ADJUSTMENTS */
+.btn--50m{
+    margin-top:50px;
+}
