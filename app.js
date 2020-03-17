@@ -10,3 +10,11 @@ buscador.addEventListener('input', ()=>{
         // *busca las cosas
     }
 })
+
+
+function add_cart(element){
+    const card = element.parentNode.parentNode.parentNode.parentNode;
+    const img_card = card.querySelector('.card__image img').src;
+    console.log(img_card);
+    
+}
