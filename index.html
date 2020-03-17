@@ -22,7 +22,7 @@
 
 
     <header class="page-header">
-        <div id="logo" class="page-header__logo">asd</div>
+        <div id="logo" class="page-header__logo"></div>
         <nav class="page-header__menu">
             <div id="navbar" class="page-header__navbar navbar--left-space">
                 <a class="navbar__item" href="#">Hombres</a>
@@ -57,12 +57,12 @@
                                     <td class="cart-list__card">
                                         <p class="card-info">$4000</p>
                                     </td>
-                                    <td class="cart-list__card"><button class="card__delete">Borrar</button></td>
+                                    <td class="cart-list__card"><button class="card__delete" onclick="rmv_cart(this)">Borrar</button></td>
                                 </tr>
                                 
                             </tbody>
                         </table>
-                        <a href="#" id="clear-cart" class="cart-list__clear">Clean cart</a>
+                        <a href="#" id="clear-cart" class="cart-list__clear" onclick="clean_cart()">Clean cart</a>
                     </div>
                 </li>
                 
@@ -102,12 +102,15 @@
                         </div>
                         <div class="card-body__body"><!-- ?SECOND PARENT-->
                             Calzado running para hombre
+                            <div class="body__price">
+                                $100
+                            </div>
                             <div class="body__shopping-part"><!-- ?FIRST PARENT-->
                                 <button class="shopping-part__shop-btn shopping-part--modal-btn" data-toggle="modal"
                                 data-target="#exampleModal">
                                     Visualizar
                                 </button>
-                                <button class="shopping-part__shop-btn shopping-part--shop-btn" onclick="add_cart(this)">Agregar a carrito</button>
+                                <button class="shopping-part__shop-btn shopping-part--shop-btn" data-id="1" onclick="add_cart(this)">Agregar a carrito</button>
                                 <!-- !! MODAL -->
 
 
@@ -173,12 +176,15 @@
                         </div>
                         <div class="card-body__body">
                             Calzado running para hombre
+                            <div class="body__price">
+                                $100
+                            </div>
                             <div class="body__shopping-part">
                                 <button class="shopping-part__shop-btn shopping-part--modal-btn" data-toggle="modal"
                                 data-target="#exampleModal">
                                     Visualizar
                                 </button>
-                                <button class="shopping-part__shop-btn shopping-part--shop-btn">Agregar a carrito</button>
+                                <button class="shopping-part__shop-btn shopping-part--shop-btn" data-id="2" onclick="add_cart(this)">Agregar a carrito</button>
                                 <!-- !! MODAL -->
 
 
@@ -244,12 +250,15 @@
                         </div>
                         <div class="card-body__body">
                             Calzado running para hombre
+                            <div class="body__price">
+                                $200
+                            </div>
                             <div class="body__shopping-part">
                                 <button class="shopping-part__shop-btn shopping-part--modal-btn" data-toggle="modal"
                                 data-target="#exampleModal">
                                     Visualizar
                                 </button>
-                                <button class="shopping-part__shop-btn shopping-part--shop-btn">Agregar a carrito</button>
+                                <button class="shopping-part__shop-btn shopping-part--shop-btn" data-id="3" onclick="add_cart(this)">Agregar a carrito</button>
                                 <!-- !! MODAL -->
 
 
@@ -314,12 +323,15 @@
                         </div>
                         <div class="card-body__body">
                             Calzado running para hombre
+                            <div class="body__price">
+                                $100
+                            </div>
                             <div class="body__shopping-part">
                                 <button class="shopping-part__shop-btn shopping-part--modal-btn" data-toggle="modal"
                                 data-target="#exampleModal">
                                     Visualizar
                                 </button>
-                                <button class="shopping-part__shop-btn shopping-part--shop-btn">Agregar a carrito</button>
+                                <button class="shopping-part__shop-btn shopping-part--shop-btn" data-id="4" onclick="add_cart(this)">Agregar a carrito</button>
                                 <!-- !! MODAL -->
 
 
@@ -385,12 +397,15 @@
                         </div>
                         <div class="card-body__body">
                             Calzado running para hombre
+                            <div class="body__price">
+                                $100
+                            </div>
                             <div class="body__shopping-part">
                                 <button class="shopping-part__shop-btn shopping-part--modal-btn" data-toggle="modal"
                                 data-target="#exampleModal">
                                     Visualizar
                                 </button>
-                                <button class="shopping-part__shop-btn shopping-part--shop-btn">Agregar a carrito</button>
+                                <button class="shopping-part__shop-btn shopping-part--shop-btn" data-id="5" onclick="add_cart(this)">Agregar a carrito</button>
                                 <!-- !! MODAL -->
 
 
@@ -456,12 +471,15 @@
                         </div>
                         <div class="card-body__body"><!-- ? second parent -->
                             Calzado running para hombre
+                            <div class="body__price">
+                                $100
+                            </div>
                             <div class="body__shopping-part"><!-- ? first parent -->
                                 <button class="shopping-part__shop-btn shopping-part--modal-btn" data-toggle="modal"
                                 data-target="#exampleModal">
                                     Visualizar
                                 </button>
-                                <button class="shopping-part__shop-btn shopping-part--shop-btn">Agregar a carrito</button>
+                                <button class="shopping-part__shop-btn shopping-part--shop-btn" data-id="6" onclick="add_cart(this)">Agregar a carrito</button>
                                 <!-- !! MODAL -->
 
 
@@ -518,7 +536,7 @@
         </section>
     </main>
 
-    
+
     <script src="app.js"></script>
     <script defer src="https://friconix.com/cdn/friconix.js"> </script> 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
