@@ -1,7 +1,6 @@
 const buscador = document.querySelector('#page-header__searcher input');
 const lista_carrito = document.querySelector('#cart-list tbody');
 
-
 loadListenners();
 // !LISTENERS
 
@@ -14,6 +13,7 @@ function loadListenners(){
     });
 
     document.addEventListener('DOMContentLoaded',leerLs);
+
 }
 
 
@@ -66,6 +66,10 @@ function rmv_cart(element){
 function clean_cart(){
     while(lista_carrito.firstChild){
         lista_carrito.removeChild(lista_carrito.firstChild);
+        if(lista_carrito.firstChild !== null){
+            rmv_ls(lista_carrito.firstChild.querySelector('.card__delete').getAttribute('data-id'));
+        }
+        
     }
 }
 
@@ -120,5 +124,7 @@ function leerLs(){
         `;
     
         lista_carrito.appendChild(row);
-    })
+    });
+
+    
 }

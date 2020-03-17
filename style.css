@@ -30,10 +30,12 @@
     color: rgb(98, 98, 98);
 }
 .navbar__item:link, .land-photo__button:link,
-.cart-list__clear:link{
+.cart-list__clear:link, .cart-list__shop:link{
     text-decoration: none;
     
 }
+
+
 
 
 
@@ -71,16 +73,38 @@ ul{
     min-height: 400px;
     min-width: 300px;
 }
+.cart__buttons{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
 .cart-list__clear{
-    position: block;
+    position: absolute;
     color: red;
     padding: 5px 20px;
     font: 18px;
     font-weight: 700;
     border: 2px solid red;
     transition: all 0.2s ease-out;
+    right: 0;
+    bottom: 0;
+}
+.cart-list__shop{
+    position: absolute;
+    color: rgb(55, 224, 4);
+    padding: 5px 20px;
+    font: 18px;
+    font-weight: 700;
+    border: 2px solid rgb(55, 224, 4);
+    transition: all 0.2s ease-out;
+    left: 0;
+    bottom: -10px;
 }
 
+.cart-list__shop:hover{
+    color: #fff;
+    background-color: rgb(55, 224, 4);
+}
 .cart-list__clear:hover{
     color: #fff;
     background-color: red;

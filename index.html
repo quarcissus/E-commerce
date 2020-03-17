@@ -30,7 +30,7 @@
                 <a class="navbar__item" href="#">Niños</a>
             </div>
         </nav>
-        <section class="cart-section">
+        <form class="cart-section" action="cart.html">
             <ul>
                 <li class="cart-section__sub-menu">
 
@@ -47,22 +47,14 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr class="cart-body__row">
-                                    <td class="cart-list__card">
-                                        <img class="card__img" src="./images/tennis1/Nike Running.webp" alt="">
-                                    </td>
-                                    <td class="cart-list__card">
-                                        <p class="card-info">tennis nike</p>
-                                    </td>
-                                    <td class="cart-list__card">
-                                        <p class="card-info">$4000</p>
-                                    </td>
-                                    <td class="cart-list__card"><button class="card__delete" onclick="rmv_cart(this)">Borrar</button></td>
-                                </tr>
-                                
                             </tbody>
                         </table>
-                        <a href="#" id="clear-cart" class="cart-list__clear" onclick="clean_cart()">Clean cart</a>
+                        <div class="cart__buttons">
+                            <input type="submit" class="cart-list__shop">
+                            <a href="#" id="clear-cart" class="cart-list__clear" onclick="clean_cart()">Clean cart</a>
+                        
+                        </div>
+                        
                     </div>
                 </li>
                 
@@ -71,7 +63,7 @@
             <div id="page-header__searcher" class="searcher">
                 <input class="searcher__input" type="text" placeholder="Buscador">
             </div>
-        </sect>
+        </form>
     </header>
 
 

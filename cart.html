@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="cart.css">
+    <script src="https://kit.fontawesome.com/31de0ff71f.js" crossorigin="anonymous"></script>
+    <title>E-store</title>
+</head>
+
+
+
+
+
+<body>
+
+
+
+
+
+    <header class="page-header">
+        <div id="logo" class="page-header__logo"></div>
+        <nav class="page-header__menu">
+            <div id="navbar" class="page-header__navbar navbar--left-space">
+                <a class="navbar__item" href="#">Hombres</a>
+                <a class="navbar__item" href="#">Mujeres</a>
+                <a class="navbar__item" href="#">Niños</a>
+            </div>
+        </nav>
+        <form class="cart-section" action="cart.html">
+            <ul>
+                <li class="cart-section__sub-menu">
+
+                    <i class="fas fa-shopping-cart"></i>
+                    <div id="cart" class="cart-section__cart">
+                        <table id="cart-list" class="cart__cart-list">
+                            <thead class="cart-list__cart-head">
+                                <tr class="cart-head__head">
+                                    <th class="head__item">Image</th>
+                                    <th class="head__item">Name</th>
+                                    <th class="head__item">Price</th>
+                                    <th></th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                        <div class="cart__buttons">
+                            <input type="submit" class="cart-list__shop">
+                            <a href="#" id="clear-cart" class="cart-list__clear" onclick="clean_cart()">Clean cart</a>
+                        
+                        </div>
+                        
+                    </div>
+                </li>
+                
+            </ul>
+            
+            <div id="page-header__searcher" class="searcher">
+                <input class="searcher__input" type="text" placeholder="Buscador">
+            </div>
+        </form>
+    </header>
+
+
+
+
+
+    <main>
+        <div id="land-photo" class="land-photo">
+            <div class="payment-container container-fluid">
+                <div class="row">
+                    <section class="col-md-9">
+                        <div class="payment-container__details">
+
+                        </div>
+                    </section>
+                    <section class="col-md-3">
+                        <div class="payment-container__payment">
+                            <div class="payment__summary">
+                                <div class="payment-summary__title">
+                                    Summary
+                                </div>
+                                <div id="summary_display" class="summary_display">
+                                    <table id="summary__cart-list" class="cart__cart-list">
+                                        <thead class="cart-list__cart-head">
+                                            <tr class="cart-head__head">
+                                                <th class="head__item">Name</th>
+                                                <th class="head__item">Price</th>
+                                                <th></th>
+            
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                
+            </div>
+            
+        </div>
+    </main>
+    <script src="app.js"></script>
+    <script src="payment.js"></script>
+</body>
+</html>
