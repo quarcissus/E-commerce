@@ -54,7 +54,6 @@
                             <a href="#" id="clear-cart" class="cart-list__clear" onclick="clean_cart()">Clean cart</a>
                         
                         </div>
-                        
                     </div>
                 </li>
                 
@@ -76,7 +75,34 @@
                 <div class="row">
                     <section class="col-md-9">
                         <div class="payment-container__details">
-
+                            <form id="card-info" class="payment_data">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Número de tarjeta electronica</label>
+                                    <input type="text" class="form-control card-number" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">CVC</label>
+                                    <input type="text" class="form-control card-cvc" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                    <small id="emailHelp" class="form-text text-muted">Número de seguridad de la tarjeta.</small>
+                                </div>
+                                <div class="form-group">    
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md">
+                                                <label for="exampleInputEmail1">Mes de caducidad</label>
+                                                <input type="text" class="form-control card-expiry-month" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                                <small>MM</small>
+                                            </div>
+                                            <div class="col-md">
+                                                <label for="exampleInputEmail1">Año de caducidad</label>
+                                                <input type="text" class="form-control card-expiry-year" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                                <small>YYYY</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button  type="submit" class="btn btn-primary ">Submit</button>
+                            </form>
                         </div>
                     </section>
                     <section class="col-md-3">
@@ -108,7 +134,9 @@
             
         </div>
     </main>
+    <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
     <script src="app.js"></script>
     <script src="payment.js"></script>
+    
 </body>
 </html>

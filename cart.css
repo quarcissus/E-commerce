@@ -199,7 +199,7 @@ ul{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    min-height: 100vh;
+    min-height: 150vh;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -239,7 +239,7 @@ ul{
 
 .payment-container{
     position: relative;
-    top: 40px;
+    top: -20px
 }
 .payment-summary__title{
     font-size: 30px;
@@ -261,4 +261,8 @@ ul{
     font-size: 27px;
     font-weight: 500;
     color: rgb(54, 54, 54);
+}
+
+.payment_data{
+    padding: 20px;
 }
